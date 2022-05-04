@@ -1,0 +1,24 @@
+ul.right_click_menu {
+  transition: all 200ms;
+  margin: 0;
+  padding: 5px;
+  list-style: none;
+  border: 2px solid;
+  border-radius: 15px;
+  background-color: #ffffff;
+  display: none;
+  position: fixed;
+  font-size: 12pt;
+  color: #ff2e63;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+ul.right_click_menu:hover {
+  background-color: #ff2e63;
+  color: #ffffff;
+}
+
+ul.right_click_menu.active {
+  display: block;
+}
