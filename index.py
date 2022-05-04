@@ -4,7 +4,7 @@ import json
 
 import json_methods
 
-eel.init("C:\\Users\\Степа\\Desktop\\eel\\web")
+eel.init("web")
 
 # function that takes values from cells and count values of parameters
 # returns list of counted parameters
