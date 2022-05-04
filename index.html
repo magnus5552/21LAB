@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href='main.css'>
+    <link rel ='stylesheet' href='table.css'>
+    <link rel="stylesheet" href="right_click_menu.css">
+
+    <script src="eel.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type ="text/javascript" src = "js/save.json"></script>
+    
+    <title>21LAB</title>
+</head>
+<body>
+    <div class="menu" id = "menu"><a class = "menu" href="#one" onclick="hide()"></a>
+        <a class = "menu" href="#two" onclick="hide()"></a>
+        <a class = "menu" href="#three" onclick="hide()"></a>
+        <a class = "menu" href="#four" onclick="hide()"></a>
+    </div>
+    <div id="tab/one">
+    <div id="one" class="list">
+        <h1 align = "center">Измерение центростремительного ускорения</h1>
+        <div class="table">
+            <table id = "acceleration" class = "table">
+                <tr>
+                    <td class ="table_heading">R, м</td>
+                    <td class ="table_heading">N</td>
+                    <td class ="table_heading">dt, с</td>
+                    <td class ="table_heading">T = dt/N, с</td>
+                    <td class ="table_heading">h, м</td>
+                    <td class ="table_heading">м, кг</td>
+                    <td class ="table_heading">a1, м/с^2</td>
+                    <td class ="table_heading">a2, м/с^2</td>
+                </tr>
+            </table>
+            <a id = "button_acceleration" class = "addrow"></a>
+        </div>
+    </div>
+    </div>  
+    <div id="tab/two">
+    <div id="two" class="list">
+        <h1 align = "center">Исследование изобарного процесса</h1>
+        <div class="table">
+            <table id = "isobaric" class = "table">
+                <tr>
+                    <td class ="table_heading">l1, см</td>
+                    <td class ="table_heading">t1, C</td>
+                    <td class ="table_heading">T1, см</td>
+                    <td class ="table_heading">dl, см</td>
+                    <td class ="table_heading">l2, см</td>
+                    <td class ="table_heading">t2, C</td>
+                    <td class ="table_heading">T2, K</td>
+                    <td class ="table_heading">"l1/T1"</td>
+                    <td class ="table_heading">"L2/t2"</td>
+                </tr>
+            </table>
+            <a id = "button_isobaric" class = "addrow"></a>
+        </div>
+    </div>
+    </div> 
+    <div id="tab/three">
+    <div id="three" class="list">
+        <h1 align = "center">Измерение силы трения</h1>
+        <div class="table" id="friction_div">
+            <table id = "friction" class = "table">
+                <caption>
+                    <tr>
+                        <td class ="friction table_heading">l, см</td>
+                        <td class ="friction table_heading">h1, см</td>
+                        <td class ="friction table_heading">h2, см</td>
+                        <td class ="friction table_heading">d1, см</td>
+                        <td class ="friction table_heading">u1</td>
+                        <td class ="friction table_heading">u1 ср</td>
+                        <td class ="friction table_heading">d2, см</td>
+                        <td class ="friction table_heading">u2</td>
+                        <td class ="friction table_heading">u2 ср</td>
+                    </tr>
+                </caption>
+            </table>
+        </div>
+        <a id = "button_friction" class = "addrow"></a>
+    </div>
+    </div>
+    <div id="tab/four">
+    <div id="four" class="list">
+        <h1 align = "center">Задания с графиками</h1>
+        <div class="table">
+            <table id = "amorphic" class = "table">
+                <tr>
+                    <td class ="table_heading">время</td>
+                    <td class ="table_heading">0.5</td>
+                    <td class ="table_heading">1</td>
+                    <td class ="table_heading">1.5</td>
+                    <td class ="table_heading">2</td>
+                    <td class ="table_heading">2.5</td>
+                    <td class ="table_heading">3</td>
+                    <td class ="table_heading">3.5</td>
+                    <td class ="table_heading">4</td>
+                </tr>
+            </table>
+            
+            <a id = "button_amorphic" class = "addrow"></a>
+            
+        </div>
+        
+    </div>
+    </div>
+    <div id = curve_block>
+        <div id="curve_chart"></div>
+    </div>
+    <ul class="right_click_menu">
+        <li id="l1">Удалить строку</li>
+    </ul>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type = "text/javascript" src = "js/main.js"></script>
+    <script type ="text/javascript" src = "js/jsonAPI.js"></script>
+    <script type="text/javascript" src="js/QueryStyle.js"></script>
+</body>
+</html>
